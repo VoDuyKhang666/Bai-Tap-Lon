@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header-nav.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+</head>
+<body>
+    <section class="page">
+        <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                    <!-- Logo -->
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link">TIEM BANH DONUT </a>
+                    </section>
+        
+                    <!-- Search bar -->
+                    <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input"  id="searchProduct" placeholder="Tìm kiếm chiếc donut bạn thích ">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section>
+        
+                    <!-- Cart -->
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item menu-item-active">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="loaibanh.html" id="TRADITIONAL">DONUT TRUYỀN THỐNG</a>
+                        <a href="loaibanh.html" id="DESIGNED"> DESIGNED DONUT</a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item" id="btnProfile">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <section class="grid">
+                <section class="best-sellers">
+                    <section class="item">
+                        <h2>Best sellers</h2>
+                        <small>Các bé donut được chọn nhiều nhất </small>
+                        <p>Tại cửa hàng của chúng tôi, những chiếc donut được yêu thích nhất không chỉ bởi hương vị thơm ngon mà còn vì sự sáng tạo độc đáo.
+                            Donut phủ sô-cô-la là lựa chọn hàng đầu, với lớp sô-cô-la đen mịn tan chảy trên mặt bánh và rắc thêm hạt cốm giòn rụm.
+                            Tiếp đến là Donut nhân kem custard, mềm mịn bên ngoài, ẩn chứa lớp kem béo ngậy bên trong, khiến thực khách mê đắm ngay từ lần đầu thưởng thức. Ngoài ra, Donut dâu phủ đường bột cũng rất được yêu thích bởi vị chua ngọt tự nhiên của mứt dâu kết hợp với lớp đường mịn ngọt nhẹ.
+                            Những chiếc bánh này không chỉ thỏa mãn vị giác mà còn mang đến trải nghiệm thưởng thức tinh tế và đầy màu sắc.</p>
+                    </section>
+                </section>
+            </section>
+            <section class="policy">
+                <section class="policy-label">
+                    <i class="fa fa-shipping-fast"></i>
+                    <span>Chính sách giao hàng</span>
+                    <small>Thanh toán trước khi giao </small>
+                </section>
+                <section class="policy-label">
+                    <i class="fa fa-sync"></i>
+                    <span>Luôn tươi mới</span>
+                    <small>Nóng hỏi vừa thỏi vừa ăn</small>
+                </section>
+                <section class="policy-label">
+                    <i class="fa fa-credit-card"></i>
+                    <span>Thanh toán tiện lợi</span>
+                    <small>VNPAY, MOMO</small>
+                </section>
+                <section class="policy-label">
+                    <i class="fa fa-comments"></i>
+                    <span>Hỗ trợ nhiệt tình</span>
+                    <small>Tư vấn, giải đáp mọi thắc mắc</small>
+                </section>
+            </section>
+            <section class="feature-product">
+                <section class="heading">
+                    <h1> DELICIOUS DONUT </h1>
+                    <small>Những chiếc bánh siêu thơm ngon</small>
+                </section>
+                <section class="grid">
+                    <section class="content-product">
+                    </section>
+                </section>
+            </section>
+            <section class="newsletter">
+                <p class="newsletter-title">ĐĂNG KÝ NHẬN EMAIL THÔNG BÁO KHUYẾN MẠI VÀ CÁC SẢN PHẨM MỚI CỦA CỬA HÀNG </p>
+                <input type="text" name id="email_newsletter" placeholder="Nhập email hoặc số điện thoại của bạn">
+                <button class="newsletter-subs-btn">Đăng ký ngay</button>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <section class="grid">
+                <section class="footer-wrap">
+                    <h3>© TIEM BANH DONUT</h3>
+                    <p>Địa chỉ: 23/43 Phan Đăng Lưu, phường 3, quận Bình Thạnh</p>
+                    <p>Điện thoại: 0704947105</p>
+                    <p>Email: tiembanhdonut@gmail.com </p> 
+                </section>
+            </section>
+        </footer>
+    </section>
+
+    <script src="./asset/js/index_currentuser.js"></script>
+    <script src="./asset/js/script_product.js"></script>
+    <script src="./asset/js/index_loadproduct.js"></script>
+    <script src="./asset/js/index_control.js"></script>
+</body>
+</html>
